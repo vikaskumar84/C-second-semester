@@ -1,0 +1,18 @@
+void solution()
+{
+    int num;
+    scanf("%d",&num);
+    if(num%5==0 && num%3==0){
+        printf("Magical Number\n");
+    }
+    else if(num%3==0){
+        printf("Magic Three\n");
+    }
+    else if(num%5==0){
+        printf("Magic Five\n");
+    }
+    else{
+                printf("Not Magic\n");
+
+    }
+}
