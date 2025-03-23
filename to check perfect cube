@@ -1,0 +1,24 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int num,f=0;
+    scanf("%d",&num);
+    for(int i=1;i<num;i++){
+        f=i*i*i;
+        if(f==num){
+            printf("perfect cube \n");
+            return 0;
+        }
+    }
+    printf("not perfect cube");
+    
+}
