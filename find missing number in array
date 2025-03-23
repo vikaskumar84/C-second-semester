@@ -1,0 +1,28 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    int arr[num];
+    for(int i=0;i<num-1;i++){
+        scanf("%d",&arr[i]);
+    }
+    int total_sum=num*(num+1)/2;
+    int arr_sum=0;
+        for(int i=0;i<num-1;i++){
+            arr_sum+=arr[i];
+        }
+        int missing_number=total_sum-arr_sum;
+        printf("%d",missing_number);
+
+    return 0;
+}
